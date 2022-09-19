@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a68b4c3d-f3de-4d91-af7c-bf70a8d45bb8" name="Changes" comment="Initial Commit2" />
+    <list default="true" id="a68b4c3d-f3de-4d91-af7c-bf70a8d45bb8" name="Changes" comment="Initial Commit2">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javatuples_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/apiguardian-api-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/javatuples-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/javax.activation-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/javax.mail.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/junit-jupiter-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/junit-jupiter-api-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/junit-jupiter-engine-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/junit-jupiter-params-5.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/junit-platform-commons-1.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/junit-platform-engine-1.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/opentest4j-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lib/sqlite-jdbc-3.8.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Administrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Agent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Catalog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/NotificationCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWE_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SWE_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +39,14 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,7 +58,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2EyqozDGs7m6heLm12tHPNqTmBn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,10 +69,25 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false"
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/leona/IdeaProjects/SWE_Project/Lib/javatuples-1.2.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\leona\IdeaProjects\SWE_Project" />
+      <recent name="C:\Users\leona\IdeaProjects\SWE_Project\Lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leona\IdeaProjects\SWE_Project\Lib" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,6 +97,8 @@
       <option name="presentableId" value="Default" />
       <updated>1663578352647</updated>
       <workItem from="1663578354686" duration="259000" />
+      <workItem from="1663578632903" duration="85000" />
+      <workItem from="1663578755405" duration="9882000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1663578385901</created>
@@ -57,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663578568877</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit2">
+      <created>1663578672358</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663578672358</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
