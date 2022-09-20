@@ -1,5 +1,8 @@
 package agentManager;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 public abstract class User {
     private final String name;
     private final String passwordHash;
@@ -23,6 +26,11 @@ public abstract class User {
         lastID++;//todo cazzo serve
         id = 0;
     }
+
+
+    public abstract void viewOrders();
+
+    public abstract void viewCatalog();
 
 
     public String getName() {
@@ -54,11 +62,21 @@ public abstract class User {
         }
     }
 
-    public abstract void viewOrders();
-
-    public abstract void viewCatalog();
-
-
+    public static String getHash(String Password) { // serie di funzioni hash che criptano la password
+        String generatePassword = null;
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5"); //E' praticamente una funzione hash che cripta la
+            // password e la rende più sicura --> roba di sicurezza ceh si può levare
+            md.update(Password.getBytes());
+            byte bytes[] = md.digest(); //TODO modificare o capire
+            StringBuilder sb = new StringBuilder();
+            for (byte aByte : bytes) sb.append(Integer.toString((aByte & 0xff) + 0x100, 16).substring(1));
+            generatePassword = sb.toString();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return generatePassword;
+    }
 }
 
 

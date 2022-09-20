@@ -14,4 +14,9 @@ public final class Administrator extends User {
     public void viewOrders() {
 
     }
+
+    @Override
+    public void viewCatalog() {
+
+    }
 }
