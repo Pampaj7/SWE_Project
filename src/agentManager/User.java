@@ -23,7 +23,7 @@ public abstract class User {
         this.name = name;
         this.email = email;
         this.passwordHash = passwordHash;
-        lastID++;//todo cazzo serve
+        lastID++;
         id = 0;
     }
 

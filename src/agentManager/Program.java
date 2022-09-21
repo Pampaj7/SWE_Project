@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class Program {
     private User activeUser;
     private final ArrayList<User> users;
-
     private static Program instance;
     private final ArrayList<Article> articles;
     private final ArrayList<Catalog> catalogs;
@@ -14,6 +13,7 @@ public class Program {
     private final ArrayList<Order> orders;
     private Menu menu;
     private final NotificationCenter notCenter;
+    private boolean wantClose = false;
 
 
     private Program() {
@@ -67,4 +67,31 @@ public class Program {
 
     public void Run() {
     }
+
+
+    public boolean login(String name, String psw) {
+        for (User i : users)
+            activeUser = i;
+
+        if (activeUser==null){
+            System.err.println("wrong psw and/or username");
+            return false;
+        }
+
+        if (activeUser instanceof Administrator)
+            this.setMenu(); //TODO finire di implementare con le classi menu
+        else{
+            this.setMenu();//lo stesso
+            ((Agent)activeUser).attach(notCenter);
+            //((Agent)activeUser).attach(emailNot); TODO email
+        }
+        return true;
+    }
+
+
+
+    public void close() {
+        wantClose = true;
+    }
+
 }
