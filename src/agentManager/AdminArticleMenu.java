@@ -65,7 +65,7 @@ public final class AdminArticleMenu implements Menu {
                         activeUser.viewProduct();
                         System.out.println("Insert Id Articles Components or 0 to terminate Composition");
                         try {
-                            int idArticle = Integer.parseInt(in.next()); //TODO cosa cazzo è
+                            int idArticle = Integer.parseInt(in.next());
                             if (idArticle == 0) {
                                 if (articles.size() > 0) {
                                     break;
@@ -97,7 +97,7 @@ public final class AdminArticleMenu implements Menu {
                     do {
                         System.out.println("insert price: ");
                         try {
-                            price = Float.parseFloat(in.next()); // TODO mm come integer?
+                            price = Float.parseFloat(in.next());
                             break;
                         } catch (Exception e) {
                             System.err.println("invalid choice");

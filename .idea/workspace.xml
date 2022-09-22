@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a68b4c3d-f3de-4d91-af7c-bf70a8d45bb8" name="Changes" comment="Initial Commit2">
-      <change afterPath="$PROJECT_DIR$/src/agentManager/AdminCustomersMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminAgentMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminAgentMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agentManager/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Administrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/AdminCatalogMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/AgentCreateOrderMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/AgentHistoricalOrderMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/AgentMainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/agentManager/NotificationEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminArticleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminArticleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -24,6 +24,7 @@ public class Program {
         customers = new ArrayList<>();
         orders = new ArrayList<>();
         notCenter = new NotificationCenter();
+        emailNot = new NotificationEmail();
     }
 
 
@@ -80,16 +81,16 @@ public class Program {
         }
 
         if (activeUser instanceof Administrator)
-            this.setMenu(); //TODO finire di implementare con le classi menu
+            this.setMenu(new AdminMainMenu()); //TODO finire di implementare con le classi menu
         else{
-            this.setMenu();//lo stesso
+            this.setMenu(new AgentMainMenu());//lo stesso
             ((Agent)activeUser).attach(notCenter);
-            //((Agent)activeUser).attach(emailNot); TODO email
+            ((Agent)activeUser).attach(emailNot);
         }
         return true;
     }
 
-    public void Logout() {
+    public void logout() {
         if (activeUser instanceof Agent) {
             ((Agent) activeUser).detach(notCenter);
             ((Agent) activeUser).detach(emailNot);
