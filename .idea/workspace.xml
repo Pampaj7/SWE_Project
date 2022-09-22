@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a68b4c3d-f3de-4d91-af7c-bf70a8d45bb8" name="Changes" comment="Agent, Customer, user Added">
-      <change afterPath="$PROJECT_DIR$/src/agentManager/AdminArticleMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agentManager/AdminMainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agentManager/Compound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agentManager/LoginMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agentManager/Product.java" afterDir="false" />
+    <list default="true" id="a68b4c3d-f3de-4d91-af7c-bf70a8d45bb8" name="Changes" comment="State pattern begun">
+      <change afterPath="$PROJECT_DIR$/src/agentManager/AdminAgentMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agentManager/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agentManager/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminArticleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminArticleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminMainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminMainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentManager/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agentManager/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/User.java" afterDir="false" />
     </list>
-    <list id="fdfbc4b7-d986-4eb8-aada-a649238839fb" name="Changes by pippo" comment="">
-      <change beforePath="$PROJECT_DIR$/src/agentManager/NotificationCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/NotificationCenter.java" afterDir="false" />
-    </list>
+    <list id="fdfbc4b7-d986-4eb8-aada-a649238839fb" name="Changes by pippo" comment="Changes by pippo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,20 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/Users/leona/IdeaProjects/SWE_Project/Lib/javatuples-1.2.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/leona/IdeaProjects/SWE_Project/Lib/javatuples-1.2.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leona\IdeaProjects\SWE_Project" />
@@ -86,7 +79,8 @@
       <workItem from="1663663466891" duration="939000" />
       <workItem from="1663668088253" duration="2983000" />
       <workItem from="1663683623361" duration="359000" />
-      <workItem from="1663751016340" duration="12800000" />
+      <workItem from="1663751016340" duration="13047000" />
+      <workItem from="1663777296575" duration="1643000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1663578385901</created>
@@ -123,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663671079189</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="State pattern begun">
+      <created>1663775557218</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663775557218</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changes by pippo">
+      <created>1663775571366</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663775571366</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +153,8 @@
     <MESSAGE value="Initial Commit2" />
     <MESSAGE value="Base added" />
     <MESSAGE value="Agent, Customer, user Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agent, Customer, user Added" />
+    <MESSAGE value="State pattern begun" />
+    <MESSAGE value="Changes by pippo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by pippo" />
   </component>
 </project>

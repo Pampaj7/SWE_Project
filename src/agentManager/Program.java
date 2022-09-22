@@ -13,6 +13,7 @@ public class Program {
     private final ArrayList<Order> orders;
     private Menu menu;
     private final NotificationCenter notCenter;
+    private final NotificationEmail emailNot;
     private boolean wantClose = false;
 
 
@@ -88,6 +89,14 @@ public class Program {
         return true;
     }
 
+    public void Logout() {
+        if (activeUser instanceof Agent) {
+            ((Agent) activeUser).detach(notCenter);
+            ((Agent) activeUser).detach(emailNot);
+        }
+        activeUser = null;
+        this.setMenu(new LoginMenu());
+    }
 
 
     public void close() {

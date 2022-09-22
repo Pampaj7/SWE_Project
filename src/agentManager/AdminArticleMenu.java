@@ -61,8 +61,54 @@ public final class AdminArticleMenu implements Menu {
                 case 1:
                     boolean agg;
                     while (true) {
+                        agg = false;
+                        activeUser.viewProduct();
+                        System.out.println("Insert Id Articles Components or 0 to terminate Composition");
+                        try {
+                            int idArticle = Integer.parseInt(in.next()); //TODO cosa cazzo è
+                            if (idArticle == 0) {
+                                if (articles.size() > 0) {
+                                    break;
+                                } else {
+                                    System.err.println("Select at least an article!");
+                                    continue;
+                                }
+                            }
 
+                            for (Article i : Program.getInstance().getArticles()) {
+                                if (i.getId() == idArticle) {
+                                    articles.add(i);
+                                    price += i.price;
+                                    agg = true;
+                                }
+                            }
+                            if (!agg) {
+                                System.err.println("ID article not found!");
+                            }
+                        } catch (Exception e) {
+                            System.err.println("Id Not Valid!");
+                        }
                     }
+                    done = true;
+                    activeUser.createProduct(name, articles);
+                    break;
+
+                case 0:
+                    do {
+                        System.out.println("insert price: ");
+                        try {
+                            price = Float.parseFloat(in.next()); // TODO mm come integer?
+                            break;
+                        } catch (Exception e) {
+                            System.err.println("invalid choice");
+
+                        }
+                    } while (true);
+                    done = true;
+                    activeUser.createProduct(name, price);
+                    break;
+                default:
+                    System.err.println("Invalide choice");
             }
         } while (!done);
     }
