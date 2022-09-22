@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a68b4c3d-f3de-4d91-af7c-bf70a8d45bb8" name="Changes" comment="State pattern begun">
-      <change afterPath="$PROJECT_DIR$/src/agentManager/AdminAgentMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminArticleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminArticleMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminMainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminMainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agentManager/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Program.java" afterDir="false" />
+    <list default="true" id="a68b4c3d-f3de-4d91-af7c-bf70a8d45bb8" name="Changes" comment="Initial Commit2">
+      <change afterPath="$PROJECT_DIR$/src/agentManager/AdminCustomersMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminAgentMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminAgentMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Administrator.java" afterDir="false" />
     </list>
-    <list id="fdfbc4b7-d986-4eb8-aada-a649238839fb" name="Changes by pippo" comment="Changes by pippo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663775571366</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Initial Commit2">
+      <created>1663838598449</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663838598449</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,11 +154,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <MESSAGE value="Initial Commit2" />
     <MESSAGE value="Base added" />
     <MESSAGE value="Agent, Customer, user Added" />
     <MESSAGE value="State pattern begun" />
     <MESSAGE value="Changes by pippo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by pippo" />
+    <MESSAGE value="Initial Commit2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit2" />
   </component>
 </project>
