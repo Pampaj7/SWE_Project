@@ -44,7 +44,7 @@ public class AdminMainMenu implements Menu {
                     quit = true;
                     break;
                 case 3:
-                    Program.getInstance().setMenu(new AdminCustomerMenu());
+                    Program.getInstance().setMenu(new AdminCustomersMenu());
                     quit = true;
                     break;
                 case 4:
@@ -54,7 +54,7 @@ public class AdminMainMenu implements Menu {
                     Program.getInstance().setMenu(new AdminArticleMenu());
                     quit = true;
                     break;
-                case 5:
+                case 6:
                     Program.getInstance().setMenu(new AdminArticleMenu());
                 case 9:
                     Program.getInstance().logout();
