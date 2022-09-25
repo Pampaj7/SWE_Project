@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a68b4c3d-f3de-4d91-af7c-bf70a8d45bb8" name="Changes" comment="Initial Commit2">
-      <change afterPath="$PROJECT_DIR$/src/agentManager/AdminCatalogMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agentManager/AgentCreateOrderMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agentManager/AgentHistoricalOrderMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agentManager/AgentMainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agentManager/NotificationEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a68b4c3d-f3de-4d91-af7c-bf70a8d45bb8" name="Changes" comment="Program core db function added">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_activation_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_activation_1_2_01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_8_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/SWE_ProjectDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/SWE.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWE_Project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminAgentMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminAgentMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentManager/AdminArticleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminArticleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminCatalogMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminCatalogMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminCustomersMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminCustomersMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AdminMainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AdminMainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AgentCreateOrderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AgentCreateOrderMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AgentHistoricalOrderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AgentHistoricalOrderMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/AgentMainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/AgentMainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/LoginMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/LoginMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/NotificationCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/NotificationCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/NotificationEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/NotificationEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agentManager/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agentManager/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agentManager/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +56,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/agentManager/NotificationEmail.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/agentManager/Program.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/agentManager/Subject.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/agentManager/User.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,8 +85,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/leona/IdeaProjects/SWE_Project/Lib/javatuples-1.2.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/uffa/IdeaProjects/SWE_Project/db&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
@@ -61,6 +94,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\uffa\IdeaProjects\SWE_Project\db" />
+      <recent name="C:\Users\uffa\IdeaProjects\SWE_Project" />
+      <recent name="C:\Users\uffa\IdeaProjects\SWE_Project\Database" />
       <recent name="C:\Users\leona\IdeaProjects\SWE_Project" />
       <recent name="C:\Users\leona\IdeaProjects\SWE_Project\Lib" />
     </key>
@@ -84,6 +120,10 @@
       <workItem from="1663683623361" duration="359000" />
       <workItem from="1663751016340" duration="13047000" />
       <workItem from="1663777296575" duration="1643000" />
+      <workItem from="1663956882884" duration="1118000" />
+      <workItem from="1664034951352" duration="1239000" />
+      <workItem from="1664102403640" duration="2524000" />
+      <workItem from="1664104958298" duration="645000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1663578385901</created>
@@ -141,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663838598449</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Basic Code done">
+      <created>1663865066757</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663865066757</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Program core db function added">
+      <created>1664104368934</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664104368934</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +219,19 @@
     <MESSAGE value="State pattern begun" />
     <MESSAGE value="Changes by pippo" />
     <MESSAGE value="Initial Commit2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit2" />
+    <MESSAGE value="Basic Code done" />
+    <MESSAGE value="Program core db function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program core db function added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/agentManager/Main.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

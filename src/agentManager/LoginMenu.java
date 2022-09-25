@@ -2,7 +2,6 @@ package agentManager;
 
 import java.util.Scanner;
 
-
 public final class LoginMenu implements Menu {
 
     @Override
@@ -18,7 +17,7 @@ public final class LoginMenu implements Menu {
             System.out.println("0. Quit");
             System.out.print("Choose menu item: ");
             try {
-                menuItem = Integer.parseInt(in.next()); //converte da decimale ad intero
+                menuItem = Integer.parseInt(in.next());
             } catch (Exception e) {
                 menuItem = -1;
             }
@@ -28,21 +27,26 @@ public final class LoginMenu implements Menu {
 
                 case 1:
                     while (Program.getInstance().getActiveUser() == null) {
-                        System.out.println("insert username:");
+
+                        System.out.println("Insert Username:");
                         String name = inLog.nextLine();
-                        System.out.println("insert password:");
+                        System.out.println("Insert Password:");
                         String psw = inLog.nextLine();
-                        Program.getInstance().login(name, psw); //TODO da far funzionare
+                        Program.getInstance().login(name, psw);
+
                     }
+                    quit = true;
+                    break;
+
                 case 0:
                     quit = true;
-                    Program.getInstance().close(); //TODO da far funzionare
+                    Program.getInstance().close();
                     break;
 
                 default:
-                    System.err.println("Invalid choice");
+                    System.err.println("Invalid choice.");
             }
-
         } while (!quit);
     }
+
 }

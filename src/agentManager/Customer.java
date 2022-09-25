@@ -1,11 +1,12 @@
 package agentManager;
 
-public class Customer {
-    private String businessName;
-    private String country;
-    private String email;
+public final class Customer {
+
+    private final String businessName;
+    private final String country;
+    private final String email;
     private static int lastID = 0;
-    private int id;
+    private final int id;
 
     public Customer(String businessName, String country, String email) {
         this.businessName = businessName;
@@ -15,7 +16,7 @@ public class Customer {
         this.id = lastID;
     }
 
-    public Customer(String businessName, String country, String email, int id) {
+    public Customer(int id, String businessName, String country, String email) {
         this.businessName = businessName;
         this.country = country;
         this.email = email;
@@ -42,5 +43,5 @@ public class Customer {
     public static int getLastID() {
         return lastID;
     }
-}
 
+}

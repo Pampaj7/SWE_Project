@@ -2,7 +2,7 @@ package agentManager;
 
 import java.util.Scanner;
 
-public class AdminMainMenu implements Menu {
+public final class AdminMainMenu implements Menu {
 
     @Override
     public void showMenu() {
@@ -10,7 +10,8 @@ public class AdminMainMenu implements Menu {
         Administrator admin = (Administrator) Program.getInstance().getActiveUser();
         Scanner in = new Scanner(System.in);
 
-        System.out.println("hello " + admin.getName());
+        System.out.println("Hello " + admin.getName() + "!");
+
         admin.viewNotification();
 
         boolean quit = false;
@@ -33,40 +34,46 @@ public class AdminMainMenu implements Menu {
             } catch (Exception e) {
                 menuItem = -1;
             }
-
             switch (menuItem) {
+
                 case 1:
                     Program.getInstance().setMenu(new AdminAgentMenu());
                     quit = true;
                     break;
+
                 case 2:
                     Program.getInstance().setMenu(new AdminCatalogMenu());
                     quit = true;
                     break;
+
                 case 3:
-                    Program.getInstance().setMenu(new AdminCustomerMenu());
+                    Program.getInstance().setMenu(new AdminCustomersMenu());
                     quit = true;
                     break;
+
                 case 4:
                     admin.viewOrders();
                     break;
+
                 case 5:
                     Program.getInstance().setMenu(new AdminArticleMenu());
                     quit = true;
                     break;
-                case 5:
-                    Program.getInstance().setMenu(new AdminArticleMenu());
+
                 case 9:
                     Program.getInstance().logout();
                     quit = true;
                     break;
+
                 case 0:
-                    System.err.println("Invalid choice");
+                    quit = true;
+                    Program.getInstance().close();
+                    break;
+
                 default:
-                    System.err.println("Invalid choice");
+                    System.err.println("Invalid choice.");
             }
-
         } while (!quit);
-
     }
+
 }

@@ -3,6 +3,7 @@ package agentManager;
 import java.util.Scanner;
 
 public final class AgentHistoricalOrderMenu implements Menu {
+
     @Override
     public void showMenu() {
 
@@ -22,7 +23,7 @@ public final class AgentHistoricalOrderMenu implements Menu {
 
             try {
                 menuItem = Integer.parseInt(in.next());
-            }catch (Exception e){
+            } catch (Exception e) {
                 menuItem = -1;
             }
 
@@ -32,10 +33,10 @@ public final class AgentHistoricalOrderMenu implements Menu {
                         System.out.println("Insert order ID");
                         try {
                             idOrder = Integer.parseInt(in.next());
-                        }catch (Exception e){
+                        } catch (Exception e) {
                             idOrder = -1;
                         }
-                    }while(!agent.deleteOrder(idOrder));
+                    } while (!agent.deleteOrder(idOrder));
                     break;
 
                 case 9:
@@ -54,4 +55,5 @@ public final class AgentHistoricalOrderMenu implements Menu {
             }
         } while (!quit);
     }
+
 }

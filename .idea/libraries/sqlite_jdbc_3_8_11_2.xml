@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="sqlite-jdbc-3.8.11.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/sqlite-jdbc-3.8.11.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/opentest4j-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/junit-platform-engine-1.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/junit-platform-commons-1.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/junit-jupiter-params-5.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/junit-jupiter-engine-5.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/junit-jupiter-api-5.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/javax.activation-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/javatuples-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/apiguardian-api-1.0.0.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../SWE/Lib/sqlite-jdbc-3.8.11.2.jar!/" />
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+  </library>
+</component>

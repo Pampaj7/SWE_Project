@@ -9,7 +9,7 @@ public final class AgentMainMenu implements Menu {
 
         Agent activeAgent = (Agent) Program.getInstance().getActiveUser();
         Scanner in = new Scanner(System.in);
-        System.out.println("Hello "+activeAgent.getName()+"!");
+        System.out.println("Hello " + activeAgent.getName() + "!");
 
         boolean quit = false;
         int menuItem;
@@ -24,7 +24,7 @@ public final class AgentMainMenu implements Menu {
 
             try {
                 menuItem = Integer.parseInt(in.next());
-            }catch (Exception e){
+            } catch (Exception e) {
                 menuItem = -1;
             }
 

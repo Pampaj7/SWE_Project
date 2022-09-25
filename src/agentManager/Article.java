@@ -2,11 +2,10 @@ package agentManager;
 
 public abstract class Article {
 
-    protected String name;
-    protected int id;
+    protected final String name;
+    protected final int id;
     protected float price;
-
-    private int lastID;
+    private static int lastID;
 
     public Article(String name, float price) {
         this.name = name;
@@ -19,12 +18,20 @@ public abstract class Article {
         this.name = name;
         this.price = price;
         this.id = id;
-        lastID=Math.max(lastID,id);
+        lastID = Math.max(lastID, id);
     }
 
-    public String getName() {return name;}
-    public int getId() {return id;}
-    public float getPrice() {return price;}
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public float getPrice() {
+        return price;
+    }
 
     public abstract void display();
 

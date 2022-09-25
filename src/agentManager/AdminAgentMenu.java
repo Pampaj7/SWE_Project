@@ -3,6 +3,7 @@ package agentManager;
 import java.util.Scanner;
 
 public final class AdminAgentMenu implements Menu {
+
     @Override
     public void showMenu() {
 
@@ -26,42 +27,47 @@ public final class AdminAgentMenu implements Menu {
                 menuItem = -1;
             }
             switch (menuItem) {
+
                 case 1:
                     createAgent(admin);
                     break;
+
                 case 2:
-                    System.out.println("Enter the code of the agent to delete");
+                    System.out.println("Enter the code of the Agent to Delete");
                     try {
                         int idA = in.nextInt();
                         admin.deleteAgent(idA);
                     } catch (Exception e) {
-                        System.err.println("invalid id");
+                        System.err.println("Invalid Id!");
                     }
                     break;
+
                 case 3:
-                    System.out.println("Enter the code of agent you want to see the catalog");
+                    System.out.println("Enter the code of the agent for which to view the catalog");
                     try {
                         int idAgent = in.nextInt();
                         admin.viewCatalogAgent(idAgent);
                     } catch (Exception e) {
-                        System.err.println("invalid id");
+                        System.err.println("Invalid Id!");
                     }
                     break;
+
                 case 9:
                     quit = true;
                     Program.getInstance().setMenu(new AdminMainMenu());
                     break;
+
                 case 0:
                     quit = true;
                     Program.getInstance().close();
                     break;
+
                 default:
-                    System.out.println("invalid input");
+                    System.err.println("Invalid choice.");
+
             }
 
-
         } while (!quit);
-
     }
 
     private void createAgent(Administrator activeUser) {
@@ -74,14 +80,13 @@ public final class AdminAgentMenu implements Menu {
         String password = in.nextLine();
         System.out.println("Insert email :");
         String email = in.nextLine();
-
         float percentage;
         do {
-            System.out.println("insert percentage of commission");
+            System.out.println("Insert Percentage of Commission :");
             try {
                 percentage = Math.abs(Float.parseFloat(in.next()));
             } catch (Exception e) {
-                System.err.println("you must enter a number");
+                System.err.println("You must insert a number!");
                 percentage = -1;
             }
         } while (percentage == -1);
@@ -91,19 +96,23 @@ public final class AdminAgentMenu implements Menu {
         int idCatalog;
         do {
             activeUser.viewCatalog();
-            System.out.println("insert catalog id:");
+            System.out.println("Insert Catalog Id :");
             try {
                 idCatalog = Integer.parseInt(in.next());
-                for (Catalog i : Program.getInstance().getCatalogs())
-                    if (i.getId() == idCatalog)
+
+                for (Catalog i : Program.getInstance().getCatalogs()) {
+                    if (i.getId() == idCatalog) {
                         catalog = i;
+                    }
+                }
+
             } catch (Exception ignored) {
             }
 
-            if (catalog == null)
-                System.err.println("you must insert a number");
-        } while (catalog == null);
+            if (catalog == null) System.err.println("You must insert a number!");
 
+        } while (catalog == null);
         activeUser.createAgent(name, password, percentage, catalog, email);
     }
+
 }

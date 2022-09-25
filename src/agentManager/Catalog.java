@@ -2,15 +2,13 @@ package agentManager;
 
 import java.util.ArrayList;
 
+public final class Catalog {
 
-public class Catalog {
-
-    private int id;
-    private String description;
-    private String marketZone;
-    private int lastID;
-
-    private ArrayList<Article> articles;
+    private final int id;
+    private final String description;
+    private final String marketZone;
+    private static int lastID = 0;
+    private final ArrayList<Article> articles;
 
     public Catalog(ArrayList<Article> articles, String description, String marketZone) {
         this.articles = articles;
@@ -46,7 +44,9 @@ public class Catalog {
 
     public void printCatalog() {
         System.out.println("Id: " + id + " Catalog: " + description + " MarketZone: " + marketZone);
-        for (Article i : articles)
+        for (Article i : articles) {
             i.display();
+        }
     }
+
 }

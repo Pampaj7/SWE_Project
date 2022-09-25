@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public final class AgentCreateOrderMenu implements Menu {
 
-
     @Override
     public void showMenu() {
         Agent agent = (Agent) Program.getInstance().getActiveUser();
@@ -17,7 +16,8 @@ public final class AgentCreateOrderMenu implements Menu {
         int menuItem;
         int idS;
         do {
-            agent.viewCustomer();
+
+            agent.viewCustomers();
 
             System.out.println("agentManager.Menu option:");
             System.out.println("1. Create new customers");
@@ -33,7 +33,49 @@ public final class AgentCreateOrderMenu implements Menu {
                 menuItem = -1;
             }
 
+            switch (menuItem) {
 
+                case 1:
+                    createCustomers(agent);
+                    break;
+
+                case 2:
+                    do {
+                        System.out.println("Insert an id:");
+                        try {
+                            idS = Integer.parseInt(in.next());
+                        } catch (Exception e) {
+                            idS = -1;
+                        }
+
+                        checkCustomer = false;
+                        for (Customer c : Program.getInstance().getCustomers()) {
+                            if (c.getId() == idS) {
+                                checkCustomer = true;
+                                break;
+                            }
+                        }
+                        if (!checkCustomer)
+                            System.err.println("Wrong ID re-insert it!.");
+
+                    } while (!checkCustomer);
+
+                    subMenuSelectArticles(agent, idS);
+                    break;
+
+                case 9:
+                    Program.getInstance().setMenu(new AgentMainMenu());
+                    quit = true;
+                    break;
+
+                case 0:
+                    quit = true;
+                    Program.getInstance().close();
+                    break;
+
+                default:
+                    System.err.println("Invalid choice.");
+            }
         } while (!quit);
     }
 
@@ -49,29 +91,30 @@ public final class AgentCreateOrderMenu implements Menu {
     }
 
     private void subMenuSelectArticles(Agent agent, int idSelectedCustomers) {
+
         Scanner in = new Scanner(System.in);
         ArrayList<Pair<Article, Integer>> articlesPair = new ArrayList<>();
         Catalog c = agent.getCatalog();
 
         boolean agg;
-
         int qtaArticle;
         while (true) {
             agg = false;
             agent.viewCatalog();
-            System.out.println("Insert an ID articles or 0 to terminate order");
+            System.out.println("Insert an Id Articles or 0 to terminate Order");
             try {
                 int idArticle = Integer.parseInt(in.next());
                 if (idArticle == 0) {
-                    if (articlesPair.size() > 0) {
+                    if (articlesPair.size() > 0)
                         break;
-                    } else {
+                    else {
                         System.err.println("Select at least an Article!");
                         continue;
                     }
                 }
                 for (Article i : c.getArticles()) {
                     if (i.getId() == idArticle) {
+
                         do {
                             System.out.println("Insert quantity of article (>0)");
                             try {
@@ -102,6 +145,7 @@ public final class AgentCreateOrderMenu implements Menu {
                 return;
             }
         }
+
     }
 
 }

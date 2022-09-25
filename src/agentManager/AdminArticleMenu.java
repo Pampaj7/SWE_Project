@@ -7,10 +7,12 @@ public final class AdminArticleMenu implements Menu {
 
     @Override
     public void showMenu() {
-        Administrator admin = (Administrator) Program.getInstance().getActiveUser();//TODO wtf
+
+        Administrator admin = (Administrator) Program.getInstance().getActiveUser();
         Scanner in = new Scanner(System.in);
+
         boolean quit = false;
-        int menuitem;
+        int menuItem;
 
         do {
             admin.viewProduct();
@@ -20,23 +22,46 @@ public final class AdminArticleMenu implements Menu {
             System.out.println("0. Quit");
             System.out.print("Choose menu item: ");
             try {
-                menuitem = Integer.parseInt(in.next());
-
+                menuItem = Integer.parseInt(in.next());
             } catch (Exception e) {
-                menuitem = -1;
+                menuItem = -1;
             }
-            switch (menuitem) {
-
+            switch (menuItem) {
 
                 case 1:
                     createProductQuery(admin);
+                    break;
+
+                case 2:
+                    System.out.println("Enter the code of the Product to Delete");
+                    try {
+                        int idP = in.nextInt();
+                        admin.deleteProduct(idP);
+                    } catch (Exception e) {
+                        System.err.println("Invalid Id!");
+                    }
+                    break;
+
+                case 9:
+                    quit = true;
+                    Program.getInstance().setMenu(new AdminMainMenu());
+                    break;
+
+                case 0:
+                    quit = true;
+                    Program.getInstance().close();
+                    break;
+
+                default:
+                    System.err.println("Invalid choice.");
+
             }
 
         } while (!quit);
-
     }
 
     private void createProductQuery(Administrator activeUser) {
+
         Scanner in = new Scanner(System.in);
         boolean done = false;
         float price = 0;
@@ -56,8 +81,8 @@ public final class AdminArticleMenu implements Menu {
             } catch (Exception e) {
                 reply = -1;
             }
-
             switch (reply) {
+
                 case 1:
                     boolean agg;
                     while (true) {
@@ -66,11 +91,12 @@ public final class AdminArticleMenu implements Menu {
                         System.out.println("Insert Id Articles Components or 0 to terminate Composition");
                         try {
                             int idArticle = Integer.parseInt(in.next());
+
                             if (idArticle == 0) {
                                 if (articles.size() > 0) {
                                     break;
                                 } else {
-                                    System.err.println("Select at least an article!");
+                                    System.err.println("Select at least an Article!");
                                     continue;
                                 }
                             }
@@ -82,9 +108,8 @@ public final class AdminArticleMenu implements Menu {
                                     agg = true;
                                 }
                             }
-                            if (!agg) {
-                                System.err.println("ID article not found!");
-                            }
+
+                            if (!agg) System.err.println("Id Article Not Found!");
                         } catch (Exception e) {
                             System.err.println("Id Not Valid!");
                         }
@@ -95,21 +120,22 @@ public final class AdminArticleMenu implements Menu {
 
                 case 0:
                     do {
-                        System.out.println("insert price: ");
+                        System.out.println("Insert Price :");
                         try {
                             price = Float.parseFloat(in.next());
                             break;
                         } catch (Exception e) {
-                            System.err.println("invalid choice");
-
+                            System.err.println("Invalid Choice!");
                         }
                     } while (true);
                     done = true;
                     activeUser.createProduct(name, price);
                     break;
+
                 default:
-                    System.err.println("Invalide choice");
+                    System.err.println("Invalid choice.");
             }
         } while (!done);
     }
+
 }

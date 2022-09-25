@@ -4,18 +4,22 @@ import org.javatuples.Pair;
 
 import java.util.ArrayList;
 
-public class Order {
+public final class Order {
 
-    private ArrayList<Pair<Article, Integer>> pairArticles;
-    private int id;
+    private final ArrayList<Pair<Article, Integer>> pairArticles;
+    private final int id;
     private static int lastID;
     private Agent agent;
-    private float total;
-    private float commissionTot;
-    private Customer client;
+    private final float total;
+    private final float commissionTot;
+    private final Customer client;
 
+    public Order(Order old) {
+        this(old.getTotal(), old.getCommissionTot(), old.getAgent(), old.getRows(), old.getClient(), old.getId());
+    }
 
     public Order(Agent agent, ArrayList<Pair<Article, Integer>> pairArticles, Customer client) {
+
         float tmp = 0;
         for (Pair<Article, Integer> a : pairArticles)
             tmp = tmp + a.getValue0().getPrice() * a.getValue1();
@@ -49,18 +53,16 @@ public class Order {
         this.client = client;
     }
 
-
-    public Order(Order old) {
-        this(old.getTotal(), old.getCommissionTot(), old.getAgent(), old.getRows(), old.getClient(), old.getId());
-    }
-
     public ArrayList<Article> getArticles() {
-        ArrayList<Article> tmp = new ArrayList<>();
-        for (Pair<Article, Integer> a : pairArticles)
-            tmp.add(a.getValue0());
-        return tmp;
-    }
 
+        ArrayList<Article> tmp = new ArrayList<>();
+        for (Pair<Article, Integer> a : pairArticles) {
+            tmp.add(a.getValue0());
+        }
+
+        return tmp;
+
+    }
 
     public ArrayList<Pair<Article, Integer>> getRows() {
         return pairArticles;
@@ -91,8 +93,10 @@ public class Order {
     }
 
     public void printArticle() {
+
         for (Pair<Article, Integer> i : pairArticles)
-            System.out.println("    Id: " + i.getValue0().getId() + " Article: " + i.getValue0().getName() + " Price: " + i.getValue0().getPrice() + " Quantity: " + i.getValue1());
+            System.out.println("    • Id: " + i.getValue0().getId() + " Article: " + i.getValue0().getName() + " Price: " + i.getValue0().getPrice() + " Qta: " + i.getValue1());
+
     }
 
     public void agentDeleted() {

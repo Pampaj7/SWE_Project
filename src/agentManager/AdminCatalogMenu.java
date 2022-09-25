@@ -1,17 +1,20 @@
 package agentManager;
 
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 public final class AdminCatalogMenu implements Menu {
+
     @Override
     public void showMenu() {
+
         Administrator admin = (Administrator) Program.getInstance().getActiveUser();
         Scanner in = new Scanner(System.in);
+
         boolean quit = false;
+
         int menuItem;
+
         do {
             admin.viewCatalog();
             System.out.println("1. Add Catalog");
@@ -24,13 +27,14 @@ public final class AdminCatalogMenu implements Menu {
             } catch (Exception e) {
                 menuItem = -1;
             }
-
             switch (menuItem) {
+
                 case 1:
                     createCatalog(admin);
                     break;
+
                 case 2:
-                    System.out.println("Enter the code of the catalog to delete");
+                    System.out.println("Enter the code of the Catalog to Delete");
                     int idCatalog;
                     try {
                         idCatalog = Integer.parseInt(in.next());
@@ -39,23 +43,30 @@ public final class AdminCatalogMenu implements Menu {
                     }
                     admin.deleteCatalog(idCatalog);
                     break;
+
                 case 9:
                     quit = true;
                     Program.getInstance().setMenu(new AdminMainMenu());
+                    break;
+
                 case 0:
                     quit = true;
                     Program.getInstance().close();
                     break;
 
                 default:
-                    System.err.println("Invalid choice");
+
+                    System.err.println("Invalid choice.");
+
             }
 
         } while (!quit);
     }
 
     private void createCatalog(Administrator activeUser) {
+
         Scanner in = new Scanner(System.in);
+
         System.out.println("Insert Description:");
         String description = in.nextLine();
         System.out.println("Insert Market Zone :");
@@ -66,14 +77,15 @@ public final class AdminCatalogMenu implements Menu {
         while (true) {
             agg = false;
             activeUser.viewProduct();
-            System.out.println("Insert ID articlese or 0 to terminate catalog");
+            System.out.println("Insert Id Articles or 0 to terminate Catalog");
             try {
-                int idArticle = Integer.parseInt(in.next()); //TODO non chiaro
+                int idArticle = Integer.parseInt(in.next());
+
                 if (idArticle == 0) {
                     if (articles.size() > 0) {
                         break;
                     } else {
-                        System.err.println("Select al least an Article!");
+                        System.err.println("Select at least an Article!");
                         continue;
                     }
                 }
@@ -84,13 +96,12 @@ public final class AdminCatalogMenu implements Menu {
                         agg = true;
                     }
                 }
-                if (!agg) {
-                    System.err.println("ID article not found");
-                }
+                if (!agg) System.err.println("Id Article Not Found!");
             } catch (Exception e) {
-                System.err.println("ID not valid");
+                System.err.println("Id Not Valid!");
             }
         }
         activeUser.createCatalog(description, marketZone, articles);
     }
+
 }
